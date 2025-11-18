@@ -1,20 +1,17 @@
-# Library DSA Edition
+# ?? Library DSA Edition
 
-A small CLI-based Library Management System implemented in **C**.  
-It supports adding/listing/searching/deleting books and members, and issuing/returning books.  
-Data persistence uses simple binary `.dat` files stored locally.
+A fully functional **CLI Library Management System** written in **C**, demonstrating File I/O, dynamic memory, and basic data structures.
 
----
+## Features
+- Add / list / search / delete books
+- Add / list members
+- Issue and return books
+- File-backed storage: books.dat, members.dat, issues.dat
+- Modular code: db.c, main.c, user.c
 
-## ?? Features
-- Add / list / search / delete books  
-- Add / list members  
-- Issue and return books  
-- File-backed storage: `books.dat`, `members.dat`, `issues.dat`  
-- Written in portable ANSI C (C11)  
-- Good for learning File I/O + Dynamic Memory + Basic DSA  
+## Build & Run (Windows PowerShell)
+gcc -std=c11 -Wall -Wextra -Iinclude src\db.c src\user.c src\main.c -o build\library.exe
+& ".\build\library.exe"
 
----
-
-## ?? Project Structure
-
+## Author
+Raj Kumar Sah
